@@ -1,0 +1,32 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node index.js",
+    "build": "babel index.js -d dist",
+    "create": "knex migrate:make ",
+    "up": "knex migrate:latest",
+    "down": "knex migrate:rollback"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "express": "^4.18.2",
+    "joi": "^17.9.1",
+    "knex": "^2.4.2",
+    "knex-cli": "^1.0.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
